@@ -1,0 +1,11 @@
+{
+    "name": "public-toilet-locator-frontend",
+    "version": "1.0.0",
+    "description": "Frontend for the Public Toilet Locator web app",
+    "main": "app.js",
+    "scripts": {
+      "start": "http-server"
+    },
+    "dependencies": {
+    }
+  }

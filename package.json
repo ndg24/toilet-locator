@@ -1,0 +1,15 @@
+{
+    "name": "public-toilet-locator",
+    "version": "1.0.0",
+    "description": "Public Toilet Locator web app",
+    "scripts": {
+      "start": "npm run start-backend && npm run start-frontend",
+      "start-backend": "cd backend && node server.js",
+      "start-frontend": "cd frontend && http-server",
+      "install-all": "cd backend && npm install && cd ../frontend && npm install",
+      "build-frontend": "cd frontend && npm run build"
+    },
+    "dependencies": {},
+    "devDependencies": {},
+    "private": true
+  }

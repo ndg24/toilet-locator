@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Toilet Locator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Public Toilet Locator</h1>
+            <p>Find clean and accessible public restrooms in your area.</p>
+        </header>
+
+        <main>
+            <div id="search-form">
+                <label for="location">Enter your location:</label>
+                <input type="text" id="location" placeholder="Enter your location" required>
+                <button id="search-btn">Search</button>
+            </div>
+
+            <div id="map"></div>
+
+            <div id="results">
+                <h2>Results</h2>
+                <ul id="toilet-list"></ul>
+            </div>
+        </main>
+    </div>
+    <div id="pagination"></div>
+    <!-- Replace 'YOUR_GOOGLE_MAPS_API_KEY' with your actual Google Maps API key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+    <script src="app.js"></script>
+</body>
+</html>
